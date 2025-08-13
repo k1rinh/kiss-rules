@@ -338,6 +338,9 @@ const RULES_MAP = {
     keepSelector: "code, img, svg, .math, a:has(code), sup, sub, .MathJax",
     /* TODO: 部分段落无法翻译，无论sup, sub是否保留 */
   },
+  "selfh.st": {
+    selector: `.kg-bookmark-title, .kg-bookmark-description, .activity-text-container, ${DEFAULT_SELECTOR}`
+  },
 };
 
 const rules = Object.entries(RULES_MAP)
